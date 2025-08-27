@@ -37,4 +37,4 @@ Agora conecte a fonte de alimentação do ESP32.
 
 8º Passo:
 Para testar o sensor, utilize o arduino IDE, instale a biblioteca Bonezegei_DHT11 e utilize o código de exemplo.
-[Assista ao vídeo]()
+[Assista ao vídeo](https://github.com/AnaFlaviaD/DHT22/tree/main/img/video.mp4)
