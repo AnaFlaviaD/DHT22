@@ -38,3 +38,53 @@ Agora conecte a fonte de alimentação do ESP32.
 8º Passo:
 Para testar o sensor, utilize o arduino IDE, instale a biblioteca Bonezegei_DHT11 e utilize o código de exemplo.
 [Assista ao vídeo](https://github.com/AnaFlaviaD/DHT22/tree/main/img/video.mp4)
+
+
+----------
+Código de exemplo:
+
+#include <Bonezegei_DHT11.h>
+
+//param = DHT11 signal pin
+
+Bonezegei_DHT11 dht(14);
+
+void setup() {
+
+  Serial.begin(115200);
+  
+  dht.begin();
+
+}
+
+void loop() {
+
+  if (dht.getData()) {                         // get All data from DHT11
+
+    float tempDeg = dht.getTemperature();      // return temperature in celsius
+
+    float tempFar = dht.getTemperature(true);  // return temperature in fahrenheit if true celsius of false
+
+    int hum = dht.getHumidity();               // return humidity
+
+    String str  = "Temperature: ";
+
+           str += tempDeg;
+
+           str += "°C  ";
+
+           str += tempFar;
+
+           str += "°F  Humidity:";
+
+           str += hum;
+
+    Serial.println(str.c_str());
+
+    //Serial.printf("Temperature: %0.1lf°C  %0.1lf°F Humidity:%d \n", tempDeg, tempFar, hum);
+
+  }
+  
+  delay(2000);  //delay atleast 2 seconds for DHT11 to read tha data
+  
+}
