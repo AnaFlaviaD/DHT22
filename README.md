@@ -25,7 +25,7 @@ Agora iremos conectar o fio preto, um lado deverá ser colocado no encaixe ao la
 ![alt text](img/22.4.jpg)
 
 5º Passo:
-Agora iremos conectar o fio vermelho, um lado deverá ser colocado no encaixe ao lado da porta D5 do ESP e o outro lado deverá ser colocado no último encaixe ao lado do DHT22.
+Agora iremos conectar o fio vermelho, um lado deverá ser colocado no encaixe ao lado da porta 3V3 do ESP e o outro lado deverá ser colocado no último encaixe ao lado do DHT22.
 ![alt text](img/22.5.jpg)
 
 6º Passo:
